@@ -1,0 +1,22 @@
+<div class="principal-welcome-container animated fadeIn fast">
+    <form class="form-signin" novalidate [formGroup]="form" (ngSubmit)="save($event)">
+        <div class="text-center mb-4">
+            <img class="mb-4" src="https://www.flaticon.com/premium-icon/icons/svg/3199/3199998.svg" alt="" width="100">
+            <h1 class="h3 mb-3 font-weight-normal">Bienvenido</h1>
+        </div>
+
+        <div class="form-label-group">
+            <input type="text" id="inputGuestName" class="form-control" placeholder="¿Cuál es tu nombre?" required
+                autofocus formControlName="guestName">
+            <label for="inputGuestName">¿Cuál es tu nombre?</label>
+        </div>
+
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> Recordar quién soy
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="form.invalid">Comienza</button>
+        <p class="mt-5 mb-3 text-muted text-center">#AndreyAlca</p>
+    </form>
+</div>

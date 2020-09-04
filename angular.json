@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "weeding"
+    }
+  },
+  "defaultProject": "weeding",
+  "cli": {
+    "analytics": "d970eae6-01cd-4fe6-b431-47b06090988d"
+  }
 }
